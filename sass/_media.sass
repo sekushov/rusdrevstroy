@@ -1,3 +1,14 @@
+@media (max-width: 1199.9px)
+    .tech
+        &_header
+            margin-top: 130px
+            &_cont
+                padding: 0 20px
+        &_content_descr_cont
+            margin-top: 0
+    .promo
+        &_cont
+            max-width: 500px
 @media (max-width: 991.9px)
     #main 
         h1 span
@@ -10,6 +21,57 @@
                 width: 40px
             &_text
                 font-size: 20px
+    .tech
+        &_header
+            margin-top: 90px
+            padding: 20px
+            &_items
+                margin-top: 15px
+            &_item
+                &_active
+                    font-size: 20px
+            &_line
+                height: 110%
+                top: -5%
+    .calc
+        &_input
+            margin-top: 10px
+        &_dynamic 
+            margin: 0 15px
+            a
+                margin-left: 0
+        &_result
+            margin: 0 10px
+            &_value
+                font-size: 42px
+    .slider
+        &_nav
+            font-size: 20px
+            &_left
+                width: 30px
+                height: 30px
+                padding-top: 13px
+                &:hover
+                    font-size: 24px
+                    padding-top: 13px
+            &_right
+                width: 30px
+                height: 30px
+                padding-top: 13px
+                &:hover
+                    font-size: 24px
+                    padding-top: 13px
+    .contacts
+        &_title
+            margin-bottom: 20px
+        div .box
+            padding: 15px 30px
+        form 
+            input
+                font-size: 14px
+            .form_btn
+                padding: 0 10px
+
 @media (max-width: 767.9px)
     #main
         padding-top: 50px
@@ -21,11 +83,163 @@
         .main_center
             margin-top: 80px
         .main_descr
-            margin-top: 80px
+            margin-top: 60px
             font-size: 16px
     .menu
         &_link
             font-size: 12px
+    .info
+        &_text
+            font-size: 16px
+            margin: 40px 10px 0 20px
+    .tech
+        h3
+            margin-bottom: 30px
+        &_content
+            margin-top: 130px
+            &_descr
+                font-size: 16px
+        &_header
+            margin-top: 30px
+            padding: 4% 4% 4% 10%
+            &_items
+                margin-top: 10px
+            &_item
+                line-height: 20px
+                margin-top: 10px
+                font-size: 16px
+                &_active
+                    font-size: 18px
+    .calc
+        .container
+            padding: 20px 20px 40px 20px
+        &_item
+            font-size: 15px
+        &_bottom
+            display: block
+        &_dynamic
+            display: inline-block
+        &_result
+            justify-content: center
+
+@media (max-width: 575.9px)
+    #main
+        padding-bottom: 70px
+        .logo
+            &_img
+                width: 30px
+            &_text
+                font-size: 18px
+                margin-left: 5px
+        .phone
+            &_number
+                font-size: 16px
+            &_button
+                padding: 0 10px
+        h1 span
+            font-size: 22px
+            line-height: normal
+        h2 span
+            font-size: 16px
+        .main_descr
+            font-size: 14px
+    .info
+        .box
+            padding: 20px 0
+            &_content
+                display: block
+        &_item
+            margin: 20px auto
+    .tech
+        &_content
+            margin-top: 160px
+            &_descr
+                font-size: 14px
+                padding: 10px
+    .calc
+        &_subtitle
+            font-size: 16px
+        &_items
+            display: block
+        &_item
+            height: 30px
+            margin: 5px auto
+            font-size: 14px
+        &_dynamic a
+                font-size: 14px
+        &_input
+            font-size: 14px
+        &_result
+            padding-top: 40px
+            &_value
+                font-size: 36px
+    .promo
+        &_cont
+            p
+                margin-top: 20px
+                font-size: 14px
+        &_bg
+            transform: none
+        &_price
+            max-width: 250px
+            &_prev
+                font-size: 20px
+                &_line
+                    width: 112px
+            &_new
+                font-size: 30px
+            &_descr
+                margin-top: 4px
+        &_timer
+            padding: 0 5px
+            &_block
+                width: 19%
+                max-width: 80px
+            &_title
+                width: 200px
+                font-size: 14px
+            &_descr
+                font-size: 12px
+        &_button
+            max-width: 250px
+            font-size: 14px
+    .slider
+        &_nav
+            font-size: 16px
+            &_left
+                width: 24px
+                height: 24px
+                padding-top: 11px
+                &:hover
+                    font-size: 22px
+                    padding-top: 9px
+            &_right
+                width: 24px
+                height: 24px
+                padding-top: 11px
+                &:hover
+                    font-size: 22px
+                    padding-top: 9px
+    .contacts
+        &_str
+            &_label
+                display: block
+                text-align: center
+                width: 100%
+                margin: 7px 0
+            &_data
+                display: block
+                text-align: center
+                margin: 7px 0
+            &_line
+                width: 90%
+                margin: 0 auto
+        div .box
+            width: 90%
+            margin: 50px auto 0 auto
+            padding: 15px
+
+@media (min-width: 576px) and (max-width: 767.9px)
     .info
         &_item
             width: 150px
@@ -35,6 +249,3 @@
                 line-height: 50px
             &_title
                 line-height: 20px
-        &_text
-            font-size: 16px
-            margin: 40px 10px 0 20px
