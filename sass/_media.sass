@@ -12,10 +12,10 @@
 @media (max-width: 991.9px)
     #main 
         h1 span
-            font-size: 30px
-            line-height: 30px
+            font-size: 28px
+            line-height: 28px
         .main_button_btn
-            padding: 0 20px
+            padding: 14px 20px 0 20px
         .logo
             &_img
                 width: 40px
@@ -37,10 +37,11 @@
         &_input
             margin-top: 10px
         &_dynamic 
-            margin: 0 15px
+            margin: 0 10px
             a
                 margin-left: 0
         &_result
+            min-width: 325px
             margin: 0 10px
             &_value
                 font-size: 42px
@@ -51,16 +52,10 @@
                 width: 30px
                 height: 30px
                 padding-top: 13px
-                &:hover
-                    font-size: 24px
-                    padding-top: 13px
             &_right
                 width: 30px
                 height: 30px
                 padding-top: 13px
-                &:hover
-                    font-size: 24px
-                    padding-top: 13px
     .contacts
         &_title
             margin-bottom: 20px
@@ -78,7 +73,7 @@
         .main_button
             margin-top: 50px
             &_btn
-                padding: 0 30px
+                padding: 14px 30px 0 30px
                 font-size: 16px
         .main_center
             margin-top: 80px
@@ -98,6 +93,7 @@
         &_content
             margin-top: 130px
             &_descr
+                min-height: 150px
                 font-size: 16px
         &_header
             margin-top: 30px
@@ -121,26 +117,76 @@
             display: inline-block
         &_result
             justify-content: center
+            &_value
+                min-width: 220px
+                text-align: right
 
 @media (max-width: 575.9px)
+    header
+        .hamburger
+            width: 40px
+            height: 40px
+            margin: 10px
+            padding-top: 2px
+            float: right
+            cursor: pointer
+            &_active
+                .hamburger_line:nth-child(1)
+                    transform: rotate(45deg) translateX(8px) translateY(6px)
+                .hamburger_line:nth-child(2)
+                    opacity: 0
+                .hamburger_line:nth-child(3)
+                    transform: rotate(-45deg) translateX(8px) translateY(-6px)
+            &_line
+                width: 80%
+                height: 2px
+                background: $dark
+                margin: 8px auto
+                transition: 0.3s all
+        .menu
+            display: block
+            padding-bottom: 10px
+            position: absolute
+            background: #fff
+            width: 100%
+            left: -100%
+            top: 60px
+            box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.3)
+            &_item
+                height: 50px
+                a
+                    font-size: 18px
+                    padding-top: 10px
+                    line-height: 30px
     #main
+        padding-top: 70px
         padding-bottom: 70px
         .logo
             &_img
                 width: 30px
             &_text
-                font-size: 18px
+                font-size: 15px
                 margin-left: 5px
         .phone
             &_number
                 font-size: 16px
             &_button
                 padding: 0 10px
-        h1 span
-            font-size: 22px
-            line-height: normal
-        h2 span
-            font-size: 16px
+        h1 
+            width: 350px
+            max-width: 100%
+            margin: 0 auto
+            span
+                font-size: 22px
+                line-height: normal
+                padding: 4px 12px 45px 12px
+        h2 
+            width: 350px
+            max-width: 100%
+            margin: 0 auto
+            span
+                font-size: 16px
+                padding: 5px 12px
         .main_descr
             font-size: 14px
     .info
@@ -149,6 +195,7 @@
             &_content
                 display: block
         &_item
+            max-width: 100%
             margin: 20px auto
     .tech
         &_content
@@ -165,13 +212,17 @@
             height: 30px
             margin: 5px auto
             font-size: 14px
+            width: fit-content
+            padding: 0 25px
         &_dynamic a
                 font-size: 14px
         &_input
             font-size: 14px
         &_result
+            min-width: fit-content
             padding-top: 40px
             &_value
+                min-width: 190px
                 font-size: 36px
     .promo
         &_cont
@@ -197,6 +248,7 @@
                 max-width: 80px
             &_title
                 width: 200px
+                max-width: 100%
                 font-size: 14px
             &_descr
                 font-size: 12px
@@ -210,16 +262,10 @@
                 width: 24px
                 height: 24px
                 padding-top: 11px
-                &:hover
-                    font-size: 22px
-                    padding-top: 9px
             &_right
                 width: 24px
                 height: 24px
                 padding-top: 11px
-                &:hover
-                    font-size: 22px
-                    padding-top: 9px
     .contacts
         &_str
             &_label
@@ -238,6 +284,16 @@
             width: 90%
             margin: 50px auto 0 auto
             padding: 15px
+    footer
+        .logo
+            &_img
+                width: 25px
+            &_text
+                font-size: 16px
+                margin-left: 5px
+    .modal
+        &_title
+            font-size: 16px
 
 @media (min-width: 576px) and (max-width: 767.9px)
     .info

@@ -30,18 +30,21 @@ h3
             text-transform: uppercase
             margin-left: 10px
 header
-    background: rgba(0,0,0,0.8)
+    background: #fff
+    color: $dark
     position: fixed
     width: 100%
     z-index: 100
     top: 0
+    transition: 0.3s all
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
 .menu
     display: flex
     background: none
-    color: white
     padding: 0
     margin: 0
     list-style-type: none
+    transition: 0.3s all
     &_item
         width: 100%
         height: 40px
@@ -52,9 +55,9 @@ header
         padding-top: 8px
         display: flex
         justify-content: center
-        color: #FFF
         font-size: 16px
-        font-weight: 300
+        font-weight: 400
+        transition: 0.3s all
         &::before
                 content: ""
                 display: block
@@ -108,6 +111,7 @@ header
         flex-wrap: wrap
         margin-top: 120px
     .titles
+        padding: 0 7px
     h1 span
         background: $dark
         color: white
@@ -130,6 +134,7 @@ header
         display: flex
         justify-content: center
         align-items: center
+        padding: 0 7px
         &_btn
             height: 55px
             position: absolute
@@ -139,7 +144,7 @@ header
             font-size: 18px
             font-weight: 400
             border-radius: 14px
-            padding: 0 30px
+            padding: 14px 30px 0 30px
             border: none
             &:hover
                 background: $green
@@ -220,6 +225,7 @@ header
         padding: 30px 0
         &_img
         &_descr
+            min-height: 140px
             border-radius: 4px
             background: #FEFEFE
             padding: 14px 20px
@@ -254,6 +260,7 @@ header
             line-height: 24px
             margin-bottom: 10px
             cursor: pointer
+            transition: 0.2s all
             &:hover
                 font-weight: 400
             &_active
@@ -316,6 +323,7 @@ header
             display: inline-block
             margin-left: 10px
     &_result
+        min-width: 360px
         margin: 0 70px
         padding-top: 50px
         display: flex
@@ -327,12 +335,12 @@ header
             margin-right: 15px
         &_value
             color: $dark
-            text-align: right
             font-size: 48px
             font-weight: 700
             line-height: 30px
             &_rub
                 font-size: 14px
+                text-align: right
     &_input
         width: 80px
         height: 34px
@@ -372,7 +380,7 @@ header
     &_price
         max-width: 380px
         border-radius: 30px
-        background: #FFEB37
+        background: #ffee52
         box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.30)
         margin: 0 auto
         padding: 0 30px
@@ -389,7 +397,7 @@ header
                 background: $dark
                 transform: rotate(-4deg)
                 position: absolute
-                top: 22px
+                top: 17px
                 left: -12px
         &_new
             font-size: 40px
@@ -453,6 +461,7 @@ header
         font-weight: 700
         text-transform: uppercase
         display: block
+        cursor: pointer
         &:hover
             background: #f3db00
         &_cont
@@ -463,11 +472,15 @@ header
 .slider
     position: relative
     box-shadow: 3px 6px 10px 0px rgb(0 0 0 / 70%)
-    img
+    &_img
+        display: none
         width: 100%
+        height: 400px
         object-fit: cover
         margin: 0
         padding: 0
+        &_active
+            display: block
     &_nav
         position: absolute
         display: flex
@@ -489,8 +502,7 @@ header
             text-align: center
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 1)
             &:hover
-                font-size: 30px
-                padding-top: 17px
+                font-weight: 700
         &_right
             width: 40px
             height: 40px
@@ -501,8 +513,7 @@ header
             text-align: center
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 1)
             &:hover
-                font-size: 30px
-                padding-top: 17px
+                font-weight: 700
 
 .contacts
     padding-top: 20px
@@ -589,3 +600,60 @@ footer
         color: #e0e0e0
     a
         color: #e0e0e0
+
+.modal
+    display: none
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 999
+    &_content
+        width: 400px
+        max-width: 80%
+        background: #fff
+        border-radius: 10px
+        padding: 20px
+        position: relative
+    &_title
+        font-size: 18px
+        text-align: center
+        line-height: normal
+        margin: 15px 0 20px 0
+    &_input
+        display: block
+        width: 200px
+        max-width: 100%
+        height: 40px
+        border: 1px solid grey
+        border-radius: 10px
+        outline: none
+        margin: 15px auto
+        padding: 0 20px
+        &:focus
+            border: 2px solid grey
+    &_btn
+        display: block
+        width: 170px
+        max-width: 100%
+        height: 40px
+        border: none
+        border-radius: 10px
+        margin: 15px auto
+        padding: 0 20px
+        background: $beige
+        &:hover
+            background: $beigeHover
+    &_close
+        font-size: 26px
+        position: absolute
+        top: 20px
+        right: 17px
+        line-height: 0
+        cursor: pointer
+        &:hover
+            font-weight: 600
