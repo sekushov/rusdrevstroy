@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // timer
-    const dateEnd = new Date (2024, 3, 3),
+    const dateEnd = new Date (2024, 2, 3),
           timerMonth = document.querySelector("[data-timerMonth]"),
           timerDay = document.querySelector("[data-timerDay]"),
           timerHour = document.querySelector("[data-timerHour]"),
